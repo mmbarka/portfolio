@@ -546,6 +546,9 @@ footer{
 /* Tablette */
 @media screen and (min-width:768px) and (max-width:1024px){
    
+        h2{
+            width: 90%;
+        }
      .toggle-button{
          display: flex;
      }
@@ -613,6 +616,9 @@ footer{
 /* Mobile */
 @media screen and (max-width:767px) {
     h1{
+        width: 90%;
+    }
+    h2{
         width: 90%;
     }
     .toggle-button{
