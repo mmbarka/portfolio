@@ -1,0 +1,691 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Slabo+27px&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+body{
+    margin:0rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* font-family: 'Montserrat', sans-serif; */
+
+/* header */
+.container_header{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)),url(../images/backgroud\ header.jpg);
+    background-size: cover;
+    opacity:0.9;
+}
+nav{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(20, 19, 19);
+    color: white;
+
+}
+.logo img{
+    width: 30%;
+    margin: .5rem;  
+}
+.menu_header ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.menu_header li{
+    list-style: none;
+}
+.menu_header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    display: block;
+}
+.menu_header li:hover{
+    background-color: #555;
+}
+
+.toggle-button{
+    position: absolute;
+    top: 3.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 3rem;
+    height: 2.1rem;
+}
+.toggle-button .bar{
+    height: .3rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.menu_header ul li a:hover{
+    border-bottom: .2rem solid #2187e7;
+
+}
+
+.home_header{
+    text-align: center;
+    padding: 7rem 0;
+
+}
+.home_header a{
+   font-size:3rem;
+   color:white;
+
+}
+h1{
+    color: white;
+    font-size: xx-large;
+    text-shadow: 0.5rem 0.5rem 1rem black;
+    border: 0.2rem solid rgba(103, 128, 159, 0.3);
+    width:40%;
+    margin:15rem auto 2rem;
+    padding: 2rem 0;
+    background: rgba(103, 128, 159, 0.3);
+    border-radius:1rem;
+    animation: bounce 1.5s infinite;
+}
+h1:hover{
+    box-shadow:0.2rem 0.5rem 0.5rem silver;
+}
+/* Main */
+main{
+    width: 80%;
+    margin: auto;
+}
+.comp_container{
+    width: 80%;
+    margin: auto;
+    padding-top: 3rem;
+}
+/* section A propos */
+.A_propos article{
+    width: 44%;
+}
+.A_propos{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem 0;
+}
+.photo{
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: .4rem .4rem .4rem silver;
+}
+article ul li a{
+    text-decoration: none;
+    color: rgb(41, 32, 32);
+}
+article ul li{
+    list-style: none;
+    margin-left: -4rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: rgb(41, 32, 32);
+}
+article ul li:hover{
+    font-weight: bold;
+    
+}
+.rs a {
+    font-size: 3rem;
+    padding: 0 1rem;
+    margin-left: 3rem;
+    color:  rgb(41, 32, 32);
+}
+.main_comp h3, .main_comp h4{
+    color: white;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+/* Mes compétences */
+.header_comp p{
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 1rem;
+}
+.header_comp p a{
+    font-size: 1.5rem;
+    color: white;
+}
+#compétences{
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)),url(../images/route\ 666.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 0rem;
+    margin-bottom: 10rem;
+    padding-bottom: 2rem;
+}
+
+.html, .css, .bootstrap, .wordpress{
+    width: 45%;
+    margin: 2rem auto;
+    text-align: center;
+}
+.html img, .css img, .bootstrap img, .wordpress img{
+    max-width: 15%;
+    
+}
+h3{
+    text-align: center;
+}
+.header_comp{
+    width: 100%;
+    text-align: center;
+}
+.main_comp{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+.progress-bar70 { 
+    width: 100%;
+    height: 1rem;
+    background-color: #191919;
+    border-radius: 1.6rem;
+    box-shadow: inset 0 .1rem .2rem #000, 0 .1rem 0 #2b2b2b;
+}
+.progress-bar70:before { 
+    content: '';
+    display: block;
+    position: absolute;
+    width: 25%;
+    height: 1rem;
+    background: #2187e7;
+    border-radius: 1.2rem;
+    box-shadow: inset 0 .1rem 0 rgba(255, 255, 255, 0.3), inset 0 -.1rem .3rem rgba(0, 0, 0, 0.4), 0 .1rem .1rem #000;
+    animation: bar70 4s infinite;
+}
+.progress-bar95 { 
+    width: 100%;
+    height: 1rem;
+    padding: 0.1rem;
+    background-color: #191919;
+    border-radius: 1.6rem;
+    box-shadow: inset 0 .1rem .2rem #000, 0 .1rem 0 #2b2b2b;
+}
+.progress-bar95:before { 
+    content: '';
+    display: block;
+    position: absolute;
+    width: 33%;
+    height: 1rem;
+    background: #2187e7;
+    border-radius: 1.2rem;
+    box-shadow: inset 0 .1rem 0 rgba(255, 255, 255, 0.3), inset 0 -.1rem .3rem rgba(0, 0, 0, 0.4), 0 .1rem .1rem #000;
+    animation: bar95 4s infinite;
+}
+@keyframes bar95{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 33%;
+    }
+}
+@keyframes bar70{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 25%;
+    }
+}
+
+
+
+h2{
+    color: #2187e7;
+    font-size: x-large;
+    font-weight: 800;
+    width: 41%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1rem;
+}
+h2:hover{
+    border-bottom: .2rem solid orangered;
+}
+/* Mes expériences */
+#exp1, #exp2, #exp3, #exp4{
+    border-radius: 5%;
+    box-shadow: .4rem .4rem .4rem black;
+    font-size: 1.1rem;
+
+}
+
+.exp_container{
+    width: 80%;
+    margin: 2rem auto;
+}
+.header_exp{
+    width: 100%;
+    margin-bottom: 4rem;
+}
+h4 img{
+    width: 22%;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+h6{
+    background-color: #2187e7;
+    width: 30%;
+    margin-left: -4rem;
+    margin-top: -1rem ;
+    padding: 1rem;
+    border-radius: .7rem;
+    font-weight: 800;
+    font-size: 1.2rem;
+    animation: bounce 1.5s infinite;
+}
+
+
+/* Mes réalisation */
+.rea_container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 5rem;
+}
+.header_rea p{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+
+
+}
+.figuremenus img{
+    width: 100%;
+}
+.figcaptionmenus img{
+    width: 20%;
+}
+.main_rea{
+    margin: 4rem 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.figuremenus{
+    margin-top: 2rem;
+    position: relative;
+    width:40%;
+    z-index: 7;
+
+}
+.figcaptionmenus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    opacity: 0;
+    background-color: rgba(33, 135, 231, 0.637);
+    color: white;
+    position: absolute;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.figcaptionmenus p{
+    z-index:1000;
+}
+
+.figcaptionmenus p a{
+    color: white;
+    text-decoration: none;
+}
+.figuremenus:hover .figcaptionmenus{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.figcaptionmenus::after{
+    border: .2rem solid white;
+    content: "";
+    top: 1rem;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    position: absolute;
+}
+/* footer */
+
+footer{
+
+    background-color: black;
+    padding: 2rem 0;
+    margin-bottom: 0rem;
+    display: flex;
+    justify-content: space-between;
+}
+.leftpart, .rightpart{
+    width: 40%;
+    margin: auto;
+}
+
+.leftpart{
+    margin-bottom: 2rem;
+}
+.leftpart ul{
+    margin-left: 4rem;
+}
+
+.leftpart ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+.leftpart ul li{
+    list-style: none;
+    margin-left: -4rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    color: white;
+}
+.leftpart ul li:hover{
+    font-weight: bold;
+    
+}
+.rsf a {
+    font-size: 3rem;
+    padding-right:1.8rem;
+    color: white;
+    margin-left: 4rem;
+}
+.cvboutton{
+    margin-left: 4rem;
+}
+
+  
+  /* form animation starts */
+  .form {
+    background: #fff;
+    box-shadow: 0 3rem 6rem 0 rgba(90, 116, 148, 0.4);
+    border-radius: .5rem;
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    left: 0;
+    right: 0;
+    border-top: .5rem solid #2187e7;
+    animation: bounce 1.5s infinite;
+  }
+ 
+  
+  .title{
+    display: block;
+    font-family: sans-serif;
+    margin: 1rem auto .5rem;
+    width: 30rem;
+  }
+ 
+  
+  .pageTitle{
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .secondaryTitle{
+    color: grey;
+  }
+  
+  .nom {
+    background-color: #ebebeb;
+    color: white;
+  }
+  .nom:hover {
+    border-bottom: .5rem solid #2187e7;
+    height: 3rem;
+    width: 38rem;
+    transition: ease 0.5s;
+  }
+  
+  .email {
+    background-color: #ebebeb;
+    height: 2em;
+  }
+  
+  .email:hover {
+    border-bottom: 5px solid #2187e7;
+    height: 3rem;
+    width: 38rem;
+    transition: ease 0.5s;
+  }
+  
+  .message {
+    background-color: #ebebeb;
+    overflow: hidden;
+    height: 10rem;
+  }
+  
+  .message:hover {
+    border-bottom: 5px solid #2187e7;
+    height: 12em;
+    width: 38rem;
+    transition: ease 0.5s;
+  }
+  
+  .formEntry {
+    display: block;
+    margin: 3rem auto;
+    min-width: 30rem;
+    padding: 1rem;
+    border-radius: .2rem;
+    border: none;
+    transition: all 0.5s ease 0s;
+  }
+  
+  .submit {
+    width: 2rem;
+    color: white;
+    background-color: #2187e7;
+    font-size: 20px;
+  }
+  
+  .submit:hover {
+    box-shadow: 1.5rem 1.5rem 1.5rem .5rem rgba(78, 72, 77, 0.219);
+    transform: translateY(-.3rem);
+    width: 30rem;
+    border-top: .5rem solid #0e3750;
+    border-radius: 0%;
+  }
+  .cvboutton a{
+      margin-top: 1rem;
+      border-radius: 2rem;
+  }
+
+  
+  @keyframes bounce {
+    0% {
+      tranform: translate(0, .4rem);
+    }
+    50% {
+      transform: translate(0, .8rem);
+    }
+  } 
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: .2rem;
+    z-index: 99;
+    border: none; 
+    outline: none;
+    color: grey; 
+    cursor: pointer; 
+    border-radius: 5rem; 
+    font-size: 4rem; 
+    background: none;
+    
+  }
+  #myBtn p{
+      font-size: .9rem;
+      font-weight: 700;
+  }
+
+  
+  
+/* Partie Responsive */
+/* Tablette */
+@media screen and (min-width:768px) and (max-width:1024px){
+   
+     .toggle-button{
+         display: flex;
+     }
+     .menu_header{
+         display: none;
+         width: 100%;
+     }
+     nav{
+         flex-direction: column;
+         align-items: flex-start;
+     }
+     .menu_header ul{
+         width: 100%;
+         flex-direction: column;
+     }
+     .menu_header li{
+        text-align: center;
+    }
+    .menu_header li a{
+        padding: 0.5rem 1rem;
+    }
+    .menu_header.active{
+        display: flex;
+    }
+    .A_propos{
+        flex-direction: column;
+    }
+    .A_propos article{
+        width: 100%;
+    }
+    .main_comp{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .html, .css, .bootstrap, .wordpress{
+        width: 80%;
+    }
+    .progress-bar70:before{
+        width: 45%;
+    }
+    .progress-bar95:before{
+        width: 60%;
+    }
+    @keyframes bar95{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    @keyframes bar70{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 45%;
+        }
+    }
+    h6{
+        width: 35%;
+    }
+}
+/* Mobile */
+@media screen and (max-width:767px) {
+    .toggle-button{
+        display: flex;
+    }
+    .menu_header{
+        display: none;
+        width: 100%;
+    }
+    nav{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu_header ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .menu_header li{
+       text-align: center;
+   }
+   .menu_header li a{
+       padding: 0.5rem 1rem;
+   }
+   .menu_header.active{
+       display: flex;
+   }
+    .A_propos{
+        flex-direction: column;
+    } 
+    .A_propos article{
+        width: 100%;
+    }
+    .main_comp{
+        flex-direction: column;
+    }
+    .html, .css, .bootstrap, .wordpress{
+        width: 80%;
+        margin: auto;
+    }
+    .progress-bar70:before{
+        width: 45%;
+    }
+    .progress-bar95:before{
+        width: 60%;
+    }
+    @keyframes bar95{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 60%;
+        }
+    }
+    @keyframes bar70{
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 45%;
+        }
+    }
+
+    h6{
+        width: 18%;
+    }
+
+    .figuremenus{
+        width: 100%;
+    }
+    .main_rea{
+        flex-direction: column;
+    }
+    .leftpart, .rightpart{
+        width: 100%;
+    }
+    footer{
+        flex-direction: column;
+    }
+}
